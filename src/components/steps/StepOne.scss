@@ -1,0 +1,13 @@
+@use "variables";
+.step1-grid {
+  background-color: variables.$c-bg-form;
+  padding: 39px 28px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.btn-wrapper {
+  grid-column: span 2 / span 2;
+  display: flex;
+  justify-content: flex-end;
+}

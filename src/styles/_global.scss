@@ -1,0 +1,28 @@
+html {
+  font-size: $fs-base;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+  overflow-x: hidden;
+  font-size: 1rem;
+  font-family: $f-body;
+  font-weight: $f-body-normal;
+  line-height: 1.5;
+  color: $c-dark;
+}

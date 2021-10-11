@@ -1,0 +1,11 @@
+.select-grid-wrapper {
+  padding: 17px 40px;
+  b {
+    padding: 3px 5px;
+  }
+}
+.select-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}

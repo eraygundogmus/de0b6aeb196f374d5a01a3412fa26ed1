@@ -1,0 +1,44 @@
+@use "variables";
+
+.stepper-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  width: 100%;
+  color: variables.$c-white-50;
+  height: max-content;
+}
+.step {
+  display: flex;
+  height: max-content;
+
+  align-items: center;
+  padding: 0 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* cr: cssgradient.io */
+.background {
+  background: rgb(36, 41, 52);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(36, 41, 52, 1) 70%,
+    rgba(29, 56, 147, 1) 100%,
+    rgba(36, 41, 52, 0.5326505602240896) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(36, 41, 52, 1) 70%,
+    rgba(29, 56, 147, 1) 100%,
+    rgba(36, 41, 52, 0.5326505602240896) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(36, 41, 52, 1) 70%,
+    rgba(29, 56, 147, 1) 100%,
+    rgba(36, 41, 52, 0.5326505602240896) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#242934",endColorstr="#242934",GradientType=1);
+}

@@ -1,0 +1,21 @@
+@use "variables";
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  &_err {
+    color: variables.$c-red;
+    padding: 3px;
+  }
+  input {
+    height: 55px;
+    padding: 12px;
+    width: 100%;
+    border-radius: variables.$radius;
+    outline: none;
+    background-color: variables.$c-white-30;
+  }
+}

@@ -1,0 +1,14 @@
+@use "variables";
+
+.select-box {
+  width: 100%;
+  padding: 18px 32px;
+  font-size: 14px;
+  font-weight: 500;
+  color: variables.$c-dark;
+  &-err {
+    color: variables.$c-red;
+    padding: 3px;
+    background-color: variables.$c-dark;
+  }
+}

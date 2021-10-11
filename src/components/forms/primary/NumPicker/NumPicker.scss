@@ -1,0 +1,19 @@
+@use "variables";
+
+.num-picker {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  label {
+    padding-left: 3px;
+  }
+  select {
+    height: 55px;
+    padding: 12px;
+    outline: none;
+    border-radius: variables.$radius;
+    background-color: variables.$c-white-30;
+  }
+}

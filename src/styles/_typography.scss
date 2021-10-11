@@ -1,0 +1,32 @@
+h1 {
+  @include xs {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 30px;
+  }
+  @include lg {
+    font-size: 40px;
+  }
+  @include xl {
+    font-size: 50px;
+  }
+}
+h2 {
+  @include xs {
+    font-size: 32px;
+  }
+  @include xl {
+    font-size: 40px;
+  }
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}

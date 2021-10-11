@@ -1,0 +1,97 @@
+@use "variables";
+
+.payment-rest {
+  background-color: variables.$c-bg-form;
+  color: white;
+  padding: 36px;
+}
+.form-bg {
+  background-color: variables.$c-bg-form;
+}
+.upper {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  align-items: center;
+  form {
+    .coupon {
+      height: 28px;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid variables.$c-white-50;
+      border-radius: variables.$radius;
+      padding: 5px 12px;
+      color: white;
+      width: 120px;
+      &::placeholder {
+        color: variables.$c-white-50;
+      }
+    }
+    .coupon-submit-btn {
+      height: 28px;
+      border-radius: variables.$radius;
+      background-color: variables.$c-white;
+
+      margin-left: -15px;
+      &:disabled {
+        background-color: variables.$c-dark;
+      }
+    }
+  }
+}
+.green {
+  color: green;
+}
+.price {
+  font-size: 14px;
+}
+.coupon_form_err {
+  color: variables.$c-red;
+  padding: 3px;
+}
+
+.lower {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  .card-flip-message {
+    color: variables.$c-green;
+    padding: 3px;
+  }
+}
+.card-form {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  padding: 5px;
+  &-element {
+    display: flex;
+    flex-direction: column;
+    color: variables.$c-white-50;
+    input {
+      height: 28px;
+      border-radius: variables.$radius;
+      width: 100%;
+      margin-top: 5px;
+    }
+    select {
+      height: 28px;
+      border-radius: variables.$radius;
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+}
+.form-span-4 {
+  grid-column: span 4 / span 4;
+}
+.form-span-1 {
+  grid-column: span 1 / span 1;
+}
+.form-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.card-form-errors {
+  color: variables.$c-red;
+}

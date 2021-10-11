@@ -1,0 +1,9 @@
+@use "variables";
+
+.step-text {
+  padding: 10px;
+  color: variables.$c-white-50;
+}
+.active {
+  color: variables.$c-white !important;
+}

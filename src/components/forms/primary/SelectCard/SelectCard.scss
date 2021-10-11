@@ -1,0 +1,43 @@
+@use "variables";
+
+.select-card {
+  display: flex;
+  border-radius: variables.$radius;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+  &-wrapper {
+    input {
+      display: none;
+    }
+    .price {
+      text-align: right;
+      padding: 3px;
+      border-radius: variables.$radius;
+      &_active {
+        background-color: variables.$c-green;
+        color: white;
+      }
+    }
+  }
+  &-info {
+    width: 100%;
+    bottom: 6px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    background-color: variables.$c-dark-50;
+  }
+  img {
+    border-radius: variables.$radius;
+    object-fit: cover;
+    min-height: 120px;
+    max-width: 100%;
+  }
+  &-active {
+    border: 1px solid variables.$c-green;
+  }
+}
