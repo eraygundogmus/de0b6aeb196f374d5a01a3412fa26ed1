@@ -9,7 +9,7 @@ import Coupons from "../../api/services/Coupon";
 import Bookings from "../../api/services/Bookings";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { stepThreeSchema } from "../../utils/couponSchema";
+import { stepThreeSchema } from "../../utils/stepThreeSchema";
 import PaymentCard from "react-payment-card-component";
 
 import { setStep } from "../stepper/stepperSlice";
